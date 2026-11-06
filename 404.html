@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الشركة العربية للتنمية العقارية والمقاولات | منذ 2010</title>
+<meta name="description" content="الشركة العربية للتنمية العقارية والمقاولات — تأسست عام 2010، فئة أولى باتحاد مقاولي التشييد والبناء. مشروعات قومية وتطوير عقاري ومقاولات عمومية في الفيوم والجيزة والقاهرة و6 أكتوبر والساحل الشمالي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#efa00b;--gold-dark:#c77f00;--ink:#232323;--ink2:#3a3a3a;--bg:#f6f5f1;--card:#ffffff;--muted:#6d6a63;--line:#e7e3d9}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:3px solid var(--gold);box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{flex:none}
+.brand .bt{line-height:1.25}
+.brand .bt b{font-size:26px;font-weight:900;display:block}
+.brand .bt span{font-size:12.5px;color:var(--muted);font-weight:600}
+nav{display:flex;gap:26px;font-weight:700;font-size:15.5px}
+nav a{padding:6px 2px;border-bottom:2px solid transparent}
+nav a:hover{color:var(--gold-dark);border-color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#1d1d1d;font-weight:800;padding:11px 22px;border-radius:10px;border:2px solid var(--gold);transition:.2s;font-size:16px}
+.btn:hover{background:var(--gold-dark);border-color:var(--gold-dark);color:#fff}
+.btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.btn.ghost:hover{background:#fff;color:#1d1d1d}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.dark:hover{background:#000}
+.burger{display:none;background:none;border:0;font-size:28px;cursor:pointer}
+/* Hero */
+.hero{position:relative;background:#1b1b1b;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(to left,rgba(15,15,15,.88) 30%,rgba(15,15,15,.45) 70%,rgba(15,15,15,.25))}
+.hero-in{position:relative;padding:96px 0 84px;max-width:760px}
+.kicker{display:inline-block;background:var(--gold);color:#191919;font-weight:800;font-size:14px;padding:4px 14px;border-radius:99px;margin-bottom:18px}
+.hero h1{font-size:46px;font-weight:900;line-height:1.35;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:19px;color:#e9e6df;max-width:640px;margin-bottom:28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.stats{background:var(--ink);color:#fff;border-top:4px solid var(--gold)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:26px 20px}
+.stat{text-align:center;padding:6px}
+.stat b{display:block;font-size:31px;font-weight:900;color:var(--gold);line-height:1.3}
+.stat span{font-size:14.5px;color:#d8d4ca;font-weight:600}
+/* Sections */
+section{padding:74px 0}
+.sec-head{max-width:720px;margin-bottom:38px}
+.sec-head .tag{color:var(--gold-dark);font-weight:800;font-size:15px;letter-spacing:.4px}
+.sec-head h2{font-size:34px;font-weight:900;line-height:1.4;margin:4px 0 8px}
+.sec-head p{color:var(--muted);font-size:17px}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:start}
+.about-grid p{font-size:17.5px;margin-bottom:14px;color:var(--ink2)}
+.points{list-style:none;margin-top:10px}
+.points li{padding:11px 16px;background:var(--card);border:1px solid var(--line);border-right:4px solid var(--gold);border-radius:10px;margin-bottom:10px;font-weight:700;font-size:16px}
+.factbox{background:var(--ink);color:#fff;border-radius:16px;padding:28px;position:sticky;top:96px}
+.factbox h3{color:var(--gold);font-size:21px;margin-bottom:14px;font-weight:900}
+.factbox li{list-style:none;padding:10px 0;border-bottom:1px dashed #4a4a4a;font-size:16px}
+.factbox li:last-child{border:0}
+.factbox b{color:var(--gold)}
+/* Fields */
+.fields{background:#fff;border-block:1px solid var(--line)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fcard{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:26px 22px}
+.fcard .ic{width:54px;height:54px;border-radius:12px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px}
+.fcard h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.fcard p{color:var(--muted);font-size:15.5px}
+/* Projects */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{font-family:inherit;font-weight:800;font-size:15px;padding:8px 20px;border-radius:99px;border:2px solid var(--ink);background:transparent;cursor:pointer}
+.filters button.on{background:var(--ink);color:#fff}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:.2s}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.10)}
+.pcard .ph{position:relative;height:210px}
+.pcard .ph img{width:100%;height:100%;object-fit:cover}
+.pcard .val{position:absolute;bottom:10px;right:10px;background:var(--gold);color:#191919;font-weight:900;font-size:14.5px;padding:3px 12px;border-radius:99px}
+.pcard .cat{position:absolute;top:10px;right:10px;background:rgba(20,20,20,.82);color:#fff;font-weight:700;font-size:13px;padding:3px 12px;border-radius:99px}
+.pcard .pb{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pcard h3{font-size:19.5px;font-weight:800;line-height:1.5}
+.pcard .loc{color:var(--gold-dark);font-weight:700;font-size:14.5px}
+.pcard p{color:var(--muted);font-size:15px;flex:1}
+/* Clients */
+.clients{background:var(--ink);color:#fff}
+.clients .sec-head h2{color:#fff}.clients .sec-head p{color:#c9c5ba}
+.clist{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.client{background:#2c2c2c;border:1px solid #414141;border-right:4px solid var(--gold);border-radius:12px;padding:20px;font-weight:800;font-size:17px;display:flex;align-items:center;gap:10px}
+.equip{margin-top:34px;background:#2c2c2c;border:1px solid #414141;border-radius:14px;padding:24px 26px}
+.equip h3{color:var(--gold);margin-bottom:8px;font-size:20px}
+.equip ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 30px;list-style:none}
+.equip li{padding:5px 0;color:#e3e0d7;font-size:16px}
+.equip li::before{content:"◆";color:var(--gold);margin-left:8px;font-size:11px}
+/* Team */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-align:center;transition:.2s}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.10)}
+.tcard .tp{height:340px;overflow:hidden}
+.tcard .tp img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.tcard .tb{padding:18px 16px 22px}
+.tcard h3{font-size:20px;font-weight:900}
+.tcard .role{display:inline-block;margin-top:6px;background:var(--gold);color:#191919;font-weight:800;font-size:14.5px;padding:2px 16px;border-radius:99px}
+@media(max-width:1000px){.tgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.tgrid{grid-template-columns:1fr}}
+/* Contact */
+.cta-band{background:linear-gradient(120deg,#2b2b2b,#1b1b1b);color:#fff;border-radius:20px;padding:44px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.cta-band h2{font-size:30px;font-weight:900;line-height:1.5;margin-bottom:8px}
+.cta-band h2 em{font-style:normal;color:var(--gold)}
+.cta-band p{color:#d8d4ca;font-size:17px}
+.contact-list{list-style:none}
+.contact-list li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:13px 18px;margin-bottom:10px;font-size:16.5px;font-weight:700}
+.contact-list li span{display:block;color:var(--gold);font-size:13.5px;font-weight:800}
+.contact-list a:hover{color:var(--gold)}
+footer{background:#161616;color:#b9b5aa;padding:30px 0;font-size:14.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.wa-float{position:fixed;bottom:20px;left:20px;z-index:60;background:#25d366;color:#fff;font-weight:900;padding:13px 20px;border-radius:99px;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:16px}
+.wa-float:hover{background:#1eb857}
+@media(max-width:1000px){.grid4{grid-template-columns:1fr 1fr}.pgrid{grid-template-columns:1fr 1fr}.clist{grid-template-columns:1fr 1fr}.stats .wrap{grid-template-columns:1fr 1fr}.about-grid,.cta-band{grid-template-columns:1fr}.factbox{position:static}}
+@media(max-width:640px){nav{display:none}nav.open{display:flex;position:absolute;top:100%;right:0;left:0;background:#fff;flex-direction:column;padding:16px 20px;gap:6px;box-shadow:0 12px 24px rgba(0,0,0,.12)}.burger{display:block}.hero h1{font-size:29px}.hero-in{padding:64px 0 56px}.pgrid,.grid4,.clist,.equip ul{grid-template-columns:1fr}section{padding:54px 0}.hd .btn{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="الشركة العربية">
+      <svg width="46" height="46" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#efa00b" stroke-width="7"><path d="M50 6 88 28v44L50 94 12 72V28Z"/><path d="M50 26 70 38v24L50 74 30 62V38Z"/><path d="M50 6v20M88 28 70 38M88 72 70 62M50 94V74M12 72l18-10M12 28l18 10"/></g></svg>
+      <span class="bt"><b>العربية</b><span>للتنمية العقارية والمقاولات</span></span>
+    </a>
+    <button class="burger" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="القائمة">☰</button>
+    <nav>
+      <a href="#about">عن الشركة</a>
+      <a href="#fields">مجالات العمل</a>
+      <a href="#projects">مشروعاتنا</a>
+      <a href="#clients">عملاؤنا</a>
+      <a href="#team">قياداتنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="btn" href="tel:+201008851644">📞 01008851644</a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <img class="bg" src="imgs/hero-cityplaza.jpg" alt="مشروع سيتي بلازا — الشركة العربية">
+  <div class="shade"></div>
+  <div class="wrap hero-in">
+    <span class="kicker">منذ عام 2010 — الفيوم، مصر</span>
+    <h1>نبني مشروعات <em>قومية</em>…<br>ونطوّر وجهات تصنع قيمة حقيقية</h1>
+    <p>الشركة العربية للتنمية العقارية والمقاولات — مقاولات عمومية وتطوير عقاري وإدارة مشروعات، مصنّفة <b>فئة أولى</b> باتحاد مقاولي التشييد والبناء، وسابقة أعمال مع كبرى جهات الدولة.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#projects">استكشف مشروعاتنا</a>
+      <a class="btn ghost" href="https://wa.me/201008851644" target="_blank" rel="noopener">💬 واتساب</a>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>+15 عامًا</b><span>من الخبرة منذ 2010</span></div>
+    <div class="stat"><b>فئة أولى</b><span>اتحاد مقاولي التشييد والبناء</span></div>
+    <div class="stat"><b>+12</b><span>مشروعًا رئيسيًا منفذًا وجاريًا</span></div>
+    <div class="stat"><b>450 مليون ج.</b><b style="display:none"></b><span>أكبر قيمة لمشروع واحد</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">من نحن</div>
+      <h2>نبذة عن الشركة العربية</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>تأسست <b>الشركة العربية عام 2010</b>، وتعمل في مجالات المقاولات العمومية والتطوير العقاري وإدارة المشروعات. واستطاعت الشركة أن تثبت كفاءتها وتميّزها في المجالات التي تعمل بها في وقت قياسي.</p>
+        <p>للشركة القدرة على تنفيذ العديد من المشروعات القومية والخدمية بجودة عالية ودقة في التنفيذ، مع رؤية جديدة تتمثل في الدراسة الميدانية المسبقة للمشروعات — حتى أصبحت مقياسًا للجودة والدقة في التنفيذ والتسليم بالمواعيد المحددة.</p>
+        <ul class="points">
+          <li>عضو بالاتحاد المصري لمقاولي التشييد والبناء — مصنّفة فئة أولى في أعمال التشييد والبناء</li>
+          <li>تضم مجموعة من أكفأ المهندسين والاستشاريين ومديري المشروعات ذوي الخبرة والكفاءة</li>
+          <li>رأس المال بالسجل التجاري هو أكبر قيمة مطلوبة لكيان شركات الفئة الأولى</li>
+        </ul>
+      </div>
+      <aside class="factbox">
+        <h3>بطاقة الشركة</h3>
+        <ul>
+          <li>سنة التأسيس: <b>2010</b></li>
+          <li>التصنيف: <b>فئة أولى — تشييد وبناء</b></li>
+          <li>المقر الرئيسي: <b>ميدان الجامعة الجديد، شارع السد العالي — الفيوم</b></li>
+          <li>نطاق العمل: <b>الفيوم — الجيزة — القاهرة — 6 أكتوبر — الشيخ زايد — الساحل الشمالي</b></li>
+          <li>البريد: <b>arabia.rdc@gmail.com</b></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="fields" id="fields">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">ماذا نفعل</div>
+      <h2>مجالات العمل</h2>
+      <p>من الدراسة الميدانية الأولى حتى التسليم النهائي — قدرات متكاملة داخل الشركة.</p>
+    </div>
+    <div class="grid4">
+      <div class="fcard"><div class="ic">🏗️</div><h3>المقاولات العمومية</h3><p>إنشاءات وتشطيبات وأعمال تخصصية لمشروعات الدولة والقطاع الخاص، بجودة ودقة في المواعيد.</p></div>
+      <div class="fcard"><div class="ic">🏙️</div><h3>التطوير العقاري</h3><p>مولات ومجمعات تجارية وطبية وإدارية وفنادق — من الفكرة إلى التشغيل والإدارة.</p></div>
+      <div class="fcard"><div class="ic">📐</div><h3>إدارة المشروعات</h3><p>دراسة ميدانية مسبقة وتخطيط ومتابعة تنفيذ بفريق من أكفأ المهندسين والاستشاريين.</p></div>
+      <div class="fcard"><div class="ic">🔩</div><h3>Steel Structure</h3><p>تصميم وتنفيذ مشروعات كاملة بنظام الإنشاءات المعدنية: محطات الأتوبيس الترددي، قاعات الأندية، والممشى التجاري THE GATE.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">سابقة الأعمال</div>
+      <h2>أهم المشروعات</h2>
+      <p>قيم المشروعات كما هي موثقة في ملف الشركة.</p>
+    </div>
+    <div class="filters">
+      <button class="on" data-f="all">الكل</button>
+      <button data-f="dev">تطوير عقاري</button>
+      <button data-f="infra">إنشاءات وبنية تحتية</button>
+      <button data-f="steel">Steel Structure</button>
+    </div>
+    <div class="pgrid" id="pgrid">
+      <article class="pcard" data-cat="dev"><div class="ph"><img src="imgs/megamall.jpg" alt="ميجا مول الفيوم"><span class="cat">تطوير عقاري</span><span class="val">350 مليون جنيه</span></div><div class="pb"><h3>ميجا مول الفيوم — مجمع طبي / تجاري / إداري</h3><div class="loc">📍 قلب مدينة الفيوم — أمام مجمع مواقف القاهرة الجديد</div><p>ثلاثة مبانٍ على مساحة 2500 م²: مبنى إداري، ومركز تجاري ترفيهي، ومبنى طبي من بدروم و6 أدوار.</p></div></article>
+      <article class="pcard" data-cat="infra"><div class="ph"><img src="imgs/may15.jpg" alt="مركز الإصلاح والتأهيل 15 مايو"><span class="cat">إنشاءات تخصصية</span><span class="val">450 مليون جنيه</span></div><div class="pb"><h3>مركز إصلاح وتأهيل مدينة 15 مايو</h3><div class="loc">📍 مدينة 15 مايو — وزارة الداخلية</div><p>أعمال تخصصية بمركز الإصلاح والتأهيل — من أكبر مشروعات الشركة قيمةً ونطاقًا.</p></div></article>
+      <article class="pcard" data-cat="infra"><div class="ph"><img src="imgs/tunnel.jpg" alt="أنفاق القطار السريع"><span class="cat">بنية تحتية ونقل</span><span class="val">تصل إلى 400 مليون جنيه</span></div><div class="pb"><h3>أنفاق سيارات رأس الحكمة وجراولة</h3><div class="loc">📍 أسفل مسار الخط الأول للقطار السريع الكهربائي</div><p>تنفيذ نفقَي سيارات ضمن مشروعات وزارة النقل — الهيئة العامة للطرق والكباري (خط السخنة – القاهرة – الإسكندرية – العلمين – مطروح).</p></div></article>
+      <article class="pcard" data-cat="dev steel"><div class="ph"><img src="imgs/thegate.jpg" alt="THE GATE الفيوم"><span class="cat">تطوير عقاري — Steel</span><span class="val">250 مليون جنيه</span></div><div class="pb"><h3>THE GATE — ممشى تجاري ترفيهي</h3><div class="loc">📍 مدخل مدينة الفيوم</div><p>4 قطاعات بطول 560 مترًا طوليًا ومساحة 5584 م²، مصمم بالكامل بنظام Steel Structure.</p></div></article>
+      <article class="pcard" data-cat="dev"><div class="ph"><img src="imgs/school.jpg" alt="مدرسة دولية 6 أكتوبر"><span class="cat">تطوير عقاري</span><span class="val">257 مليون جنيه</span></div><div class="pb"><h3>مدرسة دولية — التوسعات الشرقية</h3><div class="loc">📍 مدينة 6 أكتوبر — قطعة 12</div><p>تنفيذ وإنشاء مدرسة دولية لصالح IES EGYPT وقوسا بالم للاستثمار العقاري: مباني إدارية وحضانة ومراحل ابتدائية وإعدادية وثانوية وملاعب.</p></div></article>
+      <article class="pcard" data-cat="dev"><div class="ph"><img src="imgs/cityplaza-gate.jpg" alt="سيتي بلازا الفيوم"><span class="cat">تطوير عقاري</span><span class="val">80 مليون جنيه</span></div><div class="pb"><h3>City Plaza — تطوير حديقة المدينة</h3><div class="loc">📍 مدينة الفيوم</div><p>إنشاء وإدارة وتشغيل مول تجاري ترفيهي من 8 مبانٍ، مع جراج خاص بالسيارات وحمام سباحة داخلي مغطى.</p></div></article>
+      <article class="pcard" data-cat="dev"><div class="ph"><img src="imgs/hotel-qarun.jpg" alt="فندق بحيرة قارون"><span class="cat">تطوير عقاري</span><span class="val">80 مليون جنيه</span></div><div class="pb"><h3>فندق سياحي استشفائي — بحيرة قارون</h3><div class="loc">📍 ضفاف بحيرة قارون — الفيوم</div><p>تنفيذ مشروع فندق سياحي مصنّف على أنه سياحي استشفائي على ضفاف بحيرة قارون.</p></div></article>
+      <article class="pcard" data-cat="steel"><div class="ph"><img src="imgs/nileclub.jpg" alt="نادي النيل الجيزة"><span class="cat">تطوير ورفع كفاءة — Steel</span><span class="val">80 مليون جنيه</span></div><div class="pb"><h3>تطوير ورفع كفاءة نادي النيل</h3><div class="loc">📍 محافظة الجيزة</div><p>رفع وتطوير كفاءة نادي النيل، مع تصميم قاعات النادي بنظام Steel Structure.</p></div></article>
+      <article class="pcard" data-cat="steel infra"><div class="ph"><img src="imgs/brt.jpg" alt="الأتوبيس الترددي"><span class="cat">نقل — Steel</span><span class="val">محطتان على الدائري</span></div><div class="pb"><h3>محطات الأتوبيس الترددي BRT</h3><div class="loc">📍 الطريق الدائري — الجيزة</div><p>تنفيذ محطتَي الزهراء والبحر الأعظم ضمن مشروع الـ48 محطة الذي يربط محافظات الجيزة والقاهرة والقليوبية — بنظام Steel Structure بالكامل.</p></div></article>
+      <article class="pcard" data-cat="dev"><div class="ph"><img src="imgs/iconmall.jpg" alt="Icon Mall الشيخ زايد"><span class="cat">تطوير عقاري</span><span class="val">25 مليون جنيه</span></div><div class="pb"><h3>Icon Mall</h3><div class="loc">📍 بفيرلي هيلز — الشيخ زايد</div><p>إنشاء وإدارة وتشغيل مول تجاري إداري بمنطقة بفيرلي هيلز بالشيخ زايد.</p></div></article>
+      <article class="pcard" data-cat="steel"><div class="ph"><img src="imgs/policeclub.jpg" alt="نادي ضباط الشرطة بالمنيل"><span class="cat">تطوير ورفع كفاءة — Steel</span><span class="val">28 مليون جنيه</span></div><div class="pb"><h3>تطوير نادي ضباط الشرطة بالمنيل</h3><div class="loc">📍 المنيل — محافظة الجيزة</div><p>رفع وتطوير كفاءة نادي ضباط الشرطة بالمنيل، وتصميم قاعات نادي المنيل بنظام Steel Structure.</p></div></article>
+      <article class="pcard" data-cat="infra"><div class="ph"><img src="imgs/hayahkarima.jpg" alt="حياة كريمة"><span class="cat">مشروعات الدولة</span><span class="val">21 مليون جنيه</span></div><div class="pb"><h3>مشروعات «حياة كريمة» — منشأة سليمان</h3><div class="loc">📍 منشأة سليمان — الجيزة</div><p>وحدات سكنية خاصة بمشروعات حياة كريمة ضمن مشروعات الدولة — خطة 2030.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="clients" id="clients">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">ثقة متبادلة</div>
+      <h2>أهم عملاء الشركة العربية</h2>
+      <p>جهات حكومية وخاصة كبرى وثقت في قدراتنا التنفيذية عبر مشروعات قومية وخدمية.</p>
+    </div>
+    <div class="clist">
+      <div class="client">الهيئة الهندسية للقوات المسلحة</div>
+      <div class="client">وزارة الداخلية</div>
+      <div class="client">الهيئة العامة للطرق والكباري — وزارة النقل</div>
+      <div class="client">صندوق تأمين ضباط الشرطة</div>
+      <div class="client">صندوق تحسين خدمات الرعاية الصحية والاجتماعية</div>
+      <div class="client">مجموعة المستقبل للأعمال الاستثمارية</div>
+    </div>
+    <div class="equip">
+      <h3>معدات الشركة</h3>
+      <ul>
+        <li>محطات خلط الخرسانة الجاهزة</li>
+        <li>معدات الرفع والنقل للموقع</li>
+        <li>معدات ثقيلة: أوناش ولودر بسعات مختلفة</li>
+        <li>مولدات كهرباء وكرفانات وسكن للعاملين</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="team" style="padding-top:10px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">فريق القيادة</div>
+      <h2>قيادات الشركة</h2>
+      <p>قيادة تجمع بين الخبرة الميدانية والإدارة الاحترافية — وراء مشروعات قومية وتطويرية في أنحاء الجمهورية.</p>
+    </div>
+    <div class="tgrid">
+      <article class="tcard"><div class="tp"><img src="imgs/chairman.jpg" alt="الحاج محمد عبد الهادي — رئيس مجلس الإدارة"></div><div class="tb"><h3>الحاج محمد عبد الهادي</h3><span class="role">رئيس مجلس الإدارة</span></div></article>
+      <article class="tcard"><div class="tp"><img src="imgs/gm.jpg" alt="مهندس أحمد عبد الكريم — المدير العام"></div><div class="tb"><h3>مهندس أحمد عبد الكريم</h3><span class="role">المدير العام</span></div></article>
+      <article class="tcard"><div class="tp"><img src="imgs/admin.jpg" alt="توبة رجب عبد القوي — المدير الإداري"></div><div class="tb"><h3>توبة رجب عبد القوي</h3><span class="role">المدير الإداري</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>عندك مشروع؟ <em>خلّينا ننفذه</em> بنفس الجودة والدقة</h2>
+        <p>فريقنا جاهز لدراسة مشروعك ميدانيًا وتقديم تصور تنفيذي واضح — تواصل معنا الآن.</p>
+        <div class="hero-cta" style="margin-top:22px">
+          <a class="btn" href="https://wa.me/201008851644" target="_blank" rel="noopener">💬 ابدأ محادثة واتساب</a>
+          <a class="btn ghost" href="https://www.facebook.com/mhmd.bd.alhady.582164" target="_blank" rel="noopener">صفحتنا على فيسبوك</a>
+        </div>
+      </div>
+      <ul class="contact-list">
+        <li><span>أرقام التواصل</span><a href="tel:+201008851644">01008851644</a> — <a href="tel:+201226116035">01226116035</a></li>
+        <li><span>تليفون الشركة</span><a href="tel:+201006644329">01006644329</a> — أرضي: <a href="tel:+20842035858">0842035858</a></li>
+        <li><span>البريد الإلكتروني</span><a href="mailto:arabia.rdc@gmail.com">arabia.rdc@gmail.com</a></li>
+        <li><span>العنوان</span>ميدان الجامعة الجديد، شارع السد العالي — الفيوم</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 الشركة العربية للتنمية العقارية والمقاولات — جميع الحقوق محفوظة</div>
+    <div>تأسست 2010 — فئة أولى باتحاد مقاولي التشييد والبناء</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/201008851644" target="_blank" rel="noopener">💬 واتساب</a>
+
+<script>
+document.querySelectorAll('.filters button').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.filters button').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+    var f=b.getAttribute('data-f');
+    document.querySelectorAll('.pcard').forEach(function(c){
+      c.style.display=(f==='all'||c.getAttribute('data-cat').split(' ').indexOf(f)>-1)?'flex':'none';
+    });
+  });
+});
+document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('open')})});
+</script>
+</body>
+</html>
